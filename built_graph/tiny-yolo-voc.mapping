@@ -1,0 +1,107 @@
+<?xml version="1.0" ?>
+<mapping>
+	<map>
+		<framework name="13-leaky" out_port_id="0"/>
+		<IR id="14" name="LeakyReLU_373" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="BiasAdd_5" out_port_id="0"/>
+		<IR id="16" name="15-convolutional" out_port_id="3"/>
+	</map>
+	<map>
+		<framework name="input" out_port_id="0"/>
+		<IR id="0" name="input" out_port_id="0"/>
+	</map>
+	<map>
+		<framework name="BiasAdd" out_port_id="0"/>
+		<IR id="1" name="0-convolutional" out_port_id="3"/>
+	</map>
+	<map>
+		<framework name="1-leaky" out_port_id="0"/>
+		<IR id="2" name="LeakyReLU_369" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="2-maxpool" out_port_id="0"/>
+		<IR id="3" name="2-maxpool" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="BiasAdd_1" out_port_id="0"/>
+		<IR id="4" name="3-convolutional" out_port_id="3"/>
+	</map>
+	<map>
+		<framework name="4-leaky" out_port_id="0"/>
+		<IR id="5" name="LeakyReLU_374" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="5-maxpool" out_port_id="0"/>
+		<IR id="6" name="5-maxpool" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="BiasAdd_2" out_port_id="0"/>
+		<IR id="7" name="6-convolutional" out_port_id="3"/>
+	</map>
+	<map>
+		<framework name="7-leaky" out_port_id="0"/>
+		<IR id="8" name="LeakyReLU_370" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="8-maxpool" out_port_id="0"/>
+		<IR id="9" name="8-maxpool" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="BiasAdd_3" out_port_id="0"/>
+		<IR id="10" name="9-convolutional" out_port_id="3"/>
+	</map>
+	<map>
+		<framework name="10-leaky" out_port_id="0"/>
+		<IR id="11" name="LeakyReLU_372" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="11-maxpool" out_port_id="0"/>
+		<IR id="12" name="11-maxpool" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="BiasAdd_4" out_port_id="0"/>
+		<IR id="13" name="12-convolutional" out_port_id="3"/>
+	</map>
+	<map>
+		<framework name="14-maxpool" out_port_id="0"/>
+		<IR id="15" name="14-maxpool" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="16-leaky" out_port_id="0"/>
+		<IR id="17" name="LeakyReLU_375" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="17-maxpool" out_port_id="0"/>
+		<IR id="18" name="17-maxpool" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="BiasAdd_6" out_port_id="0"/>
+		<IR id="19" name="18-convolutional" out_port_id="3"/>
+	</map>
+	<map>
+		<framework name="19-leaky" out_port_id="0"/>
+		<IR id="20" name="LeakyReLU_" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="BiasAdd_7" out_port_id="0"/>
+		<IR id="21" name="20-convolutional" out_port_id="3"/>
+	</map>
+	<map>
+		<framework name="Pad_8" out_port_id="0"/>
+		<IR id="22" name="LeakyReLU_371" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="21-leaky" out_port_id="0"/>
+		<IR id="22" name="LeakyReLU_371" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="output" out_port_id="0"/>
+		<IR id="23" name="22-convolutional" out_port_id="3"/>
+	</map>
+	<map>
+		<framework name="BiasAdd_8" out_port_id="0"/>
+		<IR id="23" name="22-convolutional" out_port_id="3"/>
+	</map>
+</mapping>

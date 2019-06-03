@@ -1,0 +1,108 @@
+ * Serving Flask app "main" (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: on
+ * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 335-617-419
+2019-06-03 13:58:26.128101: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+[h264 @ 0x49f4dc0] top block unavailable for requested intra mode -1
+[h264 @ 0x49f4dc0] error while decoding MB 127 0, bytestream 64425
+[h264 @ 0x49f4dc0] top block unavailable for requested intra mode -1
+[h264 @ 0x49f4dc0] error while decoding MB 137 0, bytestream 66769
+[h264 @ 0x49f4dc0] top block unavailable for requested intra mode
+[h264 @ 0x49f4dc0] error while decoding MB 124 0, bytestream 78238
+[h264 @ 0x49f4dc0] top block unavailable for requested intra mode
+[h264 @ 0x49f4dc0] error while decoding MB 134 0, bytestream 73885
+[h264 @ 0x49f4dc0] top block unavailable for requested intra mode -1
+[h264 @ 0x49f4dc0] error while decoding MB 125 0, bytestream 84599
+[h264 @ 0x49f4dc0] top block unavailable for requested intra mode
+[h264 @ 0x49f4dc0] error while decoding MB 147 0, bytestream 84663
+[h264 @ 0x49f4dc0] left block unavailable for requested intra4x4 mode -1
+[h264 @ 0x49f4dc0] error while decoding MB 0 1, bytestream 89104
+[h264 @ 0x49f4dc0] left block unavailable for requested intra mode
+[h264 @ 0x49f4dc0] error while decoding MB 0 3, bytestream 84882
+[h264 @ 0x49f4dc0] top block unavailable for requested intra mode -1
+[h264 @ 0x49f4dc0] error while decoding MB 122 0, bytestream 95124
+[h264 @ 0x49f4dc0] top block unavailable for requested intra mode
+[h264 @ 0x49f4dc0] error while decoding MB 148 0, bytestream 93178
+[h264 @ 0x49f4dc0] top block unavailable for requested intra mode
+[h264 @ 0x49f4dc0] error while decoding MB 158 0, bytestream 102178
+[h264 @ 0x49f4dc0] top block unavailable for requested intra mode
+[h264 @ 0x49f4dc0] error while decoding MB 135 0, bytestream 99722
+[h264 @ 0x49f4dc0] top block unavailable for requested intra mode
+[h264 @ 0x49f4dc0] error while decoding MB 122 0, bytestream 96835
+[h264 @ 0x49f4dc0] top block unavailable for requested intra mode
+[h264 @ 0x49f4dc0] error while decoding MB 138 0, bytestream 96072
+2019-06-03 13:58:29.116591: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+[h264 @ 0x49f4dc0] top block unavailable for requested intra mode
+[h264 @ 0x49f4dc0] error while decoding MB 132 0, bytestream 97657
+[h264 @ 0x46ade80] top block unavailable for requested intra mode
+[h264 @ 0x46ade80] error while decoding MB 131 0, bytestream 96444
+[h264 @ 0x49f4dc0] top block unavailable for requested intra mode
+[h264 @ 0x49f4dc0] error while decoding MB 131 0, bytestream 96444
+[h264 @ 0x46ade80] left block unavailable for requested intra4x4 mode -1
+[h264 @ 0x46ade80] error while decoding MB 0 3, bytestream 94739
+[h264 @ 0x49f4dc0] left block unavailable for requested intra4x4 mode -1
+[h264 @ 0x49f4dc0] error while decoding MB 0 3, bytestream 94739
+[h264 @ 0x46ade80] top block unavailable for requested intra mode -1
+[h264 @ 0x46ade80] error while decoding MB 139 0, bytestream 96724
+[h264 @ 0x49f4dc0] top block unavailable for requested intra mode -1
+[h264 @ 0x49f4dc0] error while decoding MB 139 0, bytestream 96724
+[h264 @ 0x46ade80] top block unavailable for requested intra mode -1
+[h264 @ 0x46ade80] error while decoding MB 140 0, bytestream 97638
+[h264 @ 0x49f4dc0] top block unavailable for requested intra mode -1
+[h264 @ 0x49f4dc0] error while decoding MB 140 0, bytestream 97638
+[h264 @ 0x51dc200] top block unavailable for requested intra mode -1
+[h264 @ 0x51dc200] error while decoding MB 127 0, bytestream 64425
+[h264 @ 0x52db340] top block unavailable for requested intra mode -1
+[h264 @ 0x52db340] error while decoding MB 137 0, bytestream 66769
+[h264 @ 0x559fe40] top block unavailable for requested intra mode
+[h264 @ 0x559fe40] error while decoding MB 124 0, bytestream 78238
+[h264 @ 0x5a02080] top block unavailable for requested intra mode
+[h264 @ 0x5a02080] error while decoding MB 134 0, bytestream 73885
+[h264 @ 0x51dc200] top block unavailable for requested intra mode -1
+[h264 @ 0x51dc200] error while decoding MB 125 0, bytestream 84599
+[h264 @ 0x51ed940] top block unavailable for requested intra mode
+[h264 @ 0x51ed940] error while decoding MB 147 0, bytestream 84663
+[h264 @ 0x4a93740] left block unavailable for requested intra4x4 mode -1
+[h264 @ 0x4a93740] error while decoding MB 0 1, bytestream 89104
+[h264 @ 0x559fe40] left block unavailable for requested intra mode
+[h264 @ 0x559fe40] error while decoding MB 0 3, bytestream 84882
+[h264 @ 0x5a02080] top block unavailable for requested intra mode -1
+[h264 @ 0x5a02080] error while decoding MB 122 0, bytestream 95124
+[h264 @ 0x5794200] top block unavailable for requested intra mode
+[h264 @ 0x5794200] error while decoding MB 148 0, bytestream 93178
+[h264 @ 0x559fe40] top block unavailable for requested intra mode
+[h264 @ 0x559fe40] error while decoding MB 158 0, bytestream 102178
+[h264 @ 0x51ed940] top block unavailable for requested intra mode
+[h264 @ 0x51ed940] error while decoding MB 135 0, bytestream 99722
+[h264 @ 0x5794200] top block unavailable for requested intra mode
+[h264 @ 0x5794200] error while decoding MB 122 0, bytestream 96835
+[h264 @ 0x52db340] top block unavailable for requested intra mode
+[h264 @ 0x52db340] error while decoding MB 138 0, bytestream 96072
+[h264 @ 0x4a13940] top block unavailable for requested intra mode
+[h264 @ 0x4a13940] error while decoding MB 132 0, bytestream 97657
+[h264 @ 0x5794200] top block unavailable for requested intra mode
+[h264 @ 0x5794200] error while decoding MB 131 0, bytestream 96444
+[h264 @ 0x51ed940] left block unavailable for requested intra4x4 mode -1
+[h264 @ 0x51ed940] error while decoding MB 0 3, bytestream 94739
+[h264 @ 0x5794200] top block unavailable for requested intra mode -1
+[h264 @ 0x5794200] error while decoding MB 139 0, bytestream 96724
+[h264 @ 0x559fe40] top block unavailable for requested intra mode -1
+[h264 @ 0x559fe40] error while decoding MB 140 0, bytestream 97638
+[h264 @ 0x535f9c0] top block unavailable for requested intra mode
+[h264 @ 0x535f9c0] error while decoding MB 131 0, bytestream 96444
+[h264 @ 0x4757f80] left block unavailable for requested intra4x4 mode -1
+[h264 @ 0x4757f80] error while decoding MB 0 3, bytestream 94739
+[h264 @ 0x535f9c0] top block unavailable for requested intra mode -1
+[h264 @ 0x535f9c0] error while decoding MB 139 0, bytestream 96724
+[h264 @ 0x46d6080] top block unavailable for requested intra mode -1
+[h264 @ 0x46d6080] error while decoding MB 140 0, bytestream 97638
+10.0.0.1 - - [03/Jun/2019 14:01:51] "[37mGET / HTTP/1.1[0m" 200 -
+10.0.0.1 - - [03/Jun/2019 14:01:51] "[37mGET /video_feed HTTP/1.1[0m" 200 -
+10.0.0.1 - - [03/Jun/2019 14:01:52] "[37mGET /video_feed HTTP/1.1[0m" 200 -
+10.0.0.169 - - [03/Jun/2019 14:22:43] "[37mGET / HTTP/1.1[0m" 200 -
+10.0.0.169 - - [03/Jun/2019 14:22:44] "[37mGET /video_feed HTTP/1.1[0m" 200 -
