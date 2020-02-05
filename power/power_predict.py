@@ -8,7 +8,7 @@ from bs4 import BeautifulSoup
 
 def load_labels():
     labels = []
-    with open('output/labels.txt') as f:
+    with open('model/labels.txt') as f:
          for i in f.readlines():
              labels.append(i.replace("\n", ""))
     return labels
@@ -16,14 +16,14 @@ def load_labels():
 def load_graph():
     graph = tf.Graph()
     graph_def = tf.GraphDef()
-    with open('output/model_2.pb', 'rb') as f:
+    with open('model/model.pb', 'rb') as f:
         graph_def.ParseFromString(f.read())
     with graph.as_default():
         tf.import_graph_def(graph_def, name='')
     return graph
 
 def load_area():
-    content = open('output/area.xml')
+    content = open('model/area.xml')
     soup = BeautifulSoup(content, 'html.parser')
 
     identify = soup.find_all('filename')[0].get_text().split('.')[0]
@@ -50,17 +50,24 @@ def preprocess(image, area):
 def export(result, original_img, rect_img):
     date = time.strftime("%Y-%m-%d", time.localtime())
     power = result.split('\n')[-1]
-    if not os.path.exists(date):
-        os.mkdir(date)
+    if not os.path.exists('logs/'+date):
+        os.mkdir('logs/'+date)
     cv2.imwrite('logs/'+date+'/original_img.jpg', original_img)
     cv2.imwrite('logs/'+date+'/rect_img.jpg', rect_img)
+    f = open('logs/'+date+'/power.txt','w')
+    f.write(power)
+    f.close()
     MQTT = "10.20.0.19"
     MQTT_Port = 1883 #port
     MQTT_Topic = "Camera/Power" #TOPIC name
     k = "{\"camera_today\":"+power+"}"
     mqttc = mqtt.Client("python_pub")
-    mqttc.connect(MQTT, MQTT_Port)
-    mqttc.publish(MQTT_Topic, k)
+    try:
+        mqttc.connect(MQTT, MQTT_Port, 10)
+        mqttc.publish(MQTT_Topic, k)
+        print(date+' connect ok')
+    except:
+        print('mqtt connect error')
  
 if __name__ =='__main__':
     graph = load_graph()
@@ -97,8 +104,5 @@ if __name__ =='__main__':
                     cv2.rectangle(rect_img, (i['xmin'], i['ymin']), (i['xmax'], i['ymax']), (0,0,255), 1)
                 #print('\n'+result_number+'\n')
                 hour_time = time.strftime("%H-%M-%S", time.localtime())
-                if hour_time == '08-00-00':
+                if hour_time == '14-50-00':
                     export(result_number, original_img, rect_img)
-                cv2.imshow('image', original_img)
-                if cv2.waitKey(1) & 0xFF== ord('z'):
-                    show_rect = False if show_rect else True
