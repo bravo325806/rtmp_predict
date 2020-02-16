@@ -65,7 +65,7 @@ def export(results, original_img, rect_img):
     r = requests.post("http://10.20.0.19:3006/cameraPower", data=data)
     while True:
         if r.text=='ok': break
-        r = requests.post("http://10.20.0.19:3006/carmeaPowe", data=data)
+        r = requests.post("http://10.20.0.19:3006/carmeaPower", data=data)
     print(date+' upload ok', 'power:'+str(power))
     return False
     
