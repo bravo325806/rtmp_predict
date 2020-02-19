@@ -1,5 +1,5 @@
 <?xml version="1.0" ?>
-<net batch="1" name="model_4" version="6">
+<net batch="1" name="model_5" version="6">
 	<layers>
 		<layer id="0" name="input" precision="FP32" type="Input">
 			<output>
@@ -1186,7 +1186,7 @@
 			<framework value="tf"/>
 			<freeze_placeholder_with_value value="{}"/>
 			<generate_experimental_IR_V10 value="False"/>
-			<input_model value="DIR/model_4.pb"/>
+			<input_model value="DIR/model_5.pb"/>
 			<input_model_is_text value="False"/>
 			<keep_quantize_ops_in_IR value="False"/>
 			<keep_shape_ops value="False"/>

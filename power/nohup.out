@@ -1,6 +1,1 @@
-Traceback (most recent call last):
-  File "predict.py", line 131, in <module>
-    can_send = export(nums, original_img, rect_img)
-  File "predict.py", line 69, in export
-    print(date+' upload ok', 'power:'+power)
-TypeError: can only concatenate str (not "numpy.float64") to str
+2020-02-19 upload ok power:34203.3

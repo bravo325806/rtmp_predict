@@ -7,6 +7,7 @@ import time
 from openvino.inference_engine import IENetwork, IEPlugin
 from bs4 import BeautifulSoup
 
+save_count = 1950
 def load_power():
     date = max(os.listdir('logs'))
     f = open('logs/'+str(date)+'/power.txt')
@@ -129,6 +130,11 @@ if __name__ =='__main__':
             nums.append(result_number)
         if len(nums) > 5:
             del nums[0]
+        #if time.time() - start_time > count:
+        #    cv2.imwrite('img/'+str(save_count)+'.jpg', original_img)
+        #    count += 30
+        #    save_count += 1
+            
         if hour_time == '03-00-00' and can_send == True:
             can_send = export(nums, original_img, rect_img)
             pre_power = load_power()
